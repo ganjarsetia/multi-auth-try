@@ -8,3 +8,4 @@ Route::get('/home', function () {
     dd($users);
 })->name('home');
 
+Route::resource('blogs', 'blogController');

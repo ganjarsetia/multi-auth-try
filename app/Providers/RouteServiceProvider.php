@@ -56,7 +56,7 @@ class RouteServiceProvider extends ServiceProvider
         Route::group([
             'middleware' => ['web', 'employee', 'auth:employee'],
             'prefix' => 'employee',
-            'as' => 'employee.',
+            //'as' => 'employee.',
             'namespace' => $this->namespace,
         ], function ($router) {
             require base_path('routes/employee.php');

@@ -20,7 +20,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::resource('blogs', 'blogController');
+//Route::resource('blogs', 'blogController');
 //Employee Login
 Route::get('employee/login', 'EmployeeAuth\LoginController@showLoginForm');
 Route::post('employee/login', 'EmployeeAuth\LoginController@login');
